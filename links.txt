@@ -1,4 +1,6 @@
 vless://00000000-0000-0000-0000-000000000000@127.0.0.1:0?encryption=none&security=none#👇👇 СЕРВЕРА LTE👇👇
+vless://ba307bf2-80c2-44b8-9b7e-3137cf3eeab2@84.201.168.230:443?encryption=none&security=reality&sni=ads.x5.ru&pbk=4yyjwrUYvG4OJFC3tU93kUCrKXNp4VwiLFPUpS-rzAk&fp=random&type=tcp&spx=%2F#LTE VPN
+
 vless://acfb5885-f150-4626-8506-f685053ba27f@84.201.163.247:8443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=ads.x5.ru&pbk=_70spwalv7igl6UDVfWKaQFyEuA_MZeuadHgVgQV93k&fp=chrome#%F0%9F%87%AA%F0%9F%87%AA%20%D0%AD%D1%81%D1%82%D0%BE%D0%BD%D0%B8%D1%8F%20%7C%20MASTERPVP%E2%9D%A4%EF%B8%8FVPN
 
 vless://771c70ba-6d51-4baa-bf7b-0319a4e02cc7@185.242.19.249:443?mode=auto&path=%2Fxhttppath&security=tls&encryption=none&allowinsecure=0&type=xhttp&sni=top3529100291.mwscdn.ru#ФИНЛЯНДИЯ-MASTERPVP❤️VPN
