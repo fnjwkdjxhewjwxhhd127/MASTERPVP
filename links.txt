@@ -1,24 +1,16 @@
 vless://00000000-0000-0000-0000-000000000000@127.0.0.1:0?encryption=none&security=none#👇👇 СЕРВЕРА LTE👇👇
 
-vless://a9adb34d-f063-4853-ba68-8edeb518a2a2@217.16.21.103:8443?security=reality&encryption=none&pbk=FAaFQ2lo8RMnGNU0ilTSvKeH4o-Y2w4eIUkzLcWW7C0&headerType=none&fp=firefox&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=videolink.okcdn.ru&sid=12c6#🇷🇺 MASTERPVP❤️VPN %231
+vless://c6124783-58c5-4053-a9ae-50685be26a86@clipnetwork.sbs:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=clipnetwork.sbs&pbk=DJ1wLS5mvEZA7ZxtqKghRfkkPGZcEFLHZelzolywg2M&sid=a2c948caa0730d69&fp=chrome&type=tcp#🇺🇬 Уганда1 | MASTERPVP❤️VPN
+vless://c6124783-58c5-4053-a9ae-50685be26a86@clipnetwork.sbs:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=clipnetwork.sbs&pbk=DJ1wLS5mvEZA7ZxtqKghRfkkPGZcEFLHZelzolywg2M&sid=a2c948caa0730d69&fp=chrome&type=tcp#🇺🇬 Уганда2 | MASTERPVP❤️VPN
+vless://c6124783-58c5-4053-a9ae-50685be26a86@clipnetwork.sbs:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=clipnetwork.sbs&pbk=DJ1wLS5mvEZA7ZxtqKghRfkkPGZcEFLHZelzolywg2M&sid=a2c948caa0730d69&fp=chrome&type=tcp#🇺🇬 Уганда3 | MASTERPVP❤️VPN
+vless://c6124783-58c5-4053-a9ae-50685be26a86@clipnetwork.sbs:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=clipnetwork.sbs&pbk=DJ1wLS5mvEZA7ZxtqKghRfkkPGZcEFLHZelzolywg2M&sid=a2c948caa0730d69&fp=chrome&type=tcp#🇺🇬 Уганда4 | MASTERPVP❤️VPN
+vless://c6124783-58c5-4053-a9ae-50685be26a86@clipnetwork.sbs:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=clipnetwork.sbs&pbk=DJ1wLS5mvEZA7ZxtqKghRfkkPGZcEFLHZelzolywg2M&sid=a2c948caa0730d69&fp=chrome&type=tcp#🇺🇬 Уганда5 | MASTERPVP❤️VPN
+vless://c6124783-58c5-4053-a9ae-50685be26a86@clipnetwork.sbs:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=clipnetwork.sbs&pbk=DJ1wLS5mvEZA7ZxtqKghRfkkPGZcEFLHZelzolywg2M&sid=a2c948caa0730d69&fp=chrome&type=tcp#🇺🇬 Уганда6 | MASTERPVP❤️VPN
+vless://c6124783-58c5-4053-a9ae-50685be26a86@clipnetwork.sbs:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=clipnetwork.sbs&pbk=DJ1wLS5mvEZA7ZxtqKghRfkkPGZcEFLHZelzolywg2M&sid=a2c948caa0730d69&fp=chrome&type=tcp#🇺🇬 Уганда7 | MASTERPVP❤️VPN
+vless://c6124783-58c5-4053-a9ae-50685be26a86@clipnetwork.sbs:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=clipnetwork.sbs&pbk=DJ1wLS5mvEZA7ZxtqKghRfkkPGZcEFLHZelzolywg2M&sid=a2c948caa0730d69&fp=chrome&type=tcp#🇺🇬 Уганда8 | MASTERPVP❤️VPN
+vless://c6124783-58c5-4053-a9ae-50685be26a86@clipnetwork.sbs:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=clipnetwork.sbs&pbk=DJ1wLS5mvEZA7ZxtqKghRfkkPGZcEFLHZelzolywg2M&sid=a2c948caa0730d69&fp=chrome&type=tcp#🇺🇬 Уганда9 | MASTERPVP❤️VPN
+vless://c6124783-58c5-4053-a9ae-50685be26a86@clipnetwork.sbs:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=clipnetwork.sbs&pbk=DJ1wLS5mvEZA7ZxtqKghRfkkPGZcEFLHZelzolywg2M&sid=a2c948caa0730d69&fp=chrome&type=tcp#🇺🇬 Уганда10 | MASTERPVP❤️VPN
 
-vless://a9adb34d-f063-4853-ba68-8edeb518a2a2@217.16.27.31:8443?security=reality&encryption=none&pbk=FAaFQ2lo8RMnGNU0ilTSvKeH4o-Y2w4eIUkzLcWW7C0&headerType=none&fp=firefox&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=videolink.okcdn.ru&sid=12c6#🇷🇺 MASTERPVP❤️VPN %232
-
-vless://a9adb34d-f063-4853-ba68-8edeb518a2a2@217.16.21.103:8443?security=reality&encryption=none&pbk=FAaFQ2lo8RMnGNU0ilTSvKeH4o-Y2w4eIUkzLcWW7C0&headerType=none&fp=firefox&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=videolink.okcdn.ru&sid=12c6#🇷🇺 MASTERPVP❤️VPN %233
-
-vless://a9adb34d-f063-4853-ba68-8edeb518a2a2@217.16.27.31:8443?security=reality&encryption=none&pbk=FAaFQ2lo8RMnGNU0ilTSvKeH4o-Y2w4eIUkzLcWW7C0&headerType=none&fp=firefox&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=videolink.okcdn.ru&sid=12c6#🇷🇺 MASTERPVP❤️VPN %234
-
-vless://a9adb34d-f063-4853-ba68-8edeb518a2a2@217.16.21.103:8443?security=reality&encryption=none&pbk=FAaFQ2lo8RMnGNU0ilTSvKeH4o-Y2w4eIUkzLcWW7C0&headerType=none&fp=firefox&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=videolink.okcdn.ru&sid=12c6#🇷🇺 MASTERPVP❤️VPN %235
-
-vless://a9adb34d-f063-4853-ba68-8edeb518a2a2@217.16.27.31:8443?security=reality&encryption=none&pbk=FAaFQ2lo8RMnGNU0ilTSvKeH4o-Y2w4eIUkzLcWW7C0&headerType=none&fp=firefox&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=videolink.okcdn.ru&sid=12c6#🇷🇺 MASTERPVP❤️VPN %236
-
-vless://a9adb34d-f063-4853-ba68-8edeb518a2a2@217.16.21.103:8443?security=reality&encryption=none&pbk=FAaFQ2lo8RMnGNU0ilTSvKeH4o-Y2w4eIUkzLcWW7C0&headerType=none&fp=firefox&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=videolink.okcdn.ru&sid=12c6#🇷🇺 MASTERPVP❤️VPN %237
-
-vless://a9adb34d-f063-4853-ba68-8edeb518a2a2@217.16.27.31:8443?security=reality&encryption=none&pbk=FAaFQ2lo8RMnGNU0ilTSvKeH4o-Y2w4eIUkzLcWW7C0&headerType=none&fp=firefox&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=videolink.okcdn.ru&sid=12c6#🇷🇺 MASTERPVP❤️VPN %238
-
-vless://a9adb34d-f063-4853-ba68-8edeb518a2a2@217.16.21.103:8443?security=reality&encryption=none&pbk=FAaFQ2lo8RMnGNU0ilTSvKeH4o-Y2w4eIUkzLcWW7C0&headerType=none&fp=firefox&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=videolink.okcdn.ru&sid=12c6#🇷🇺 MASTERPVP❤️VPN %239
-
-vless://a9adb34d-f063-4853-ba68-8edeb518a2a2@217.16.27.31:8443?security=reality&encryption=none&pbk=FAaFQ2lo8RMnGNU0ilTSvKeH4o-Y2w4eIUkzLcWW7C0&headerType=none&fp=firefox&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=videolink.okcdn.ru&sid=12c6#🇷🇺 MASTERPVP❤️VPN %2310
 
 
 
