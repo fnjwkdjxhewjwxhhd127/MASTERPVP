@@ -1,16 +1,25 @@
 vless://00000000-0000-0000-0000-000000000000@127.0.0.1:0?encryption=none&security=none#👇👇 СЕРВЕРА LTE👇👇
 
-vless://a9adb34d-f063-4853-ba68-8edeb518a2a2@89.253.224.47:8443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=videolink.okcdn.ru&pbk=FAaFQ2lo8RMnGNU0ilTSvKeH4o-Y2w4eIUkzLcWW7C0&sid=12c6&fp=firefox&type=tcp#proxy-ru-1
+vless://a9adb34d-f063-4853-ba68-8edeb518a2a2@217.16.21.103:8443?security=reality&encryption=none&pbk=FAaFQ2lo8RMnGNU0ilTSvKeH4o-Y2w4eIUkzLcWW7C0&headerType=none&fp=firefox&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=videolink.okcdn.ru&sid=12c6#🇷🇺 MASTERPVP❤️VPN %231
 
-vless://a9adb34d-f063-4853-ba68-8edeb518a2a2@89.253.219.182:8443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=videolink.okcdn.ru&pbk=FAaFQ2lo8RMnGNU0ilTSvKeH4o-Y2w4eIUkzLcWW7C0&sid=12c6&fp=firefox&type=tcp#proxy-ru-2
+vless://a9adb34d-f063-4853-ba68-8edeb518a2a2@217.16.27.31:8443?security=reality&encryption=none&pbk=FAaFQ2lo8RMnGNU0ilTSvKeH4o-Y2w4eIUkzLcWW7C0&headerType=none&fp=firefox&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=videolink.okcdn.ru&sid=12c6#🇷🇺 MASTERPVP❤️VPN %232
 
-vless://a9adb34d-f063-4853-ba68-8edeb518a2a2@89.253.221.191:8443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=videolink.okcdn.ru&pbk=FAaFQ2lo8RMnGNU0ilTSvKeH4o-Y2w4eIUkzLcWW7C0&sid=12c6&fp=firefox&type=tcp#proxy-ru-3
+vless://a9adb34d-f063-4853-ba68-8edeb518a2a2@217.16.21.103:8443?security=reality&encryption=none&pbk=FAaFQ2lo8RMnGNU0ilTSvKeH4o-Y2w4eIUkzLcWW7C0&headerType=none&fp=firefox&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=videolink.okcdn.ru&sid=12c6#🇷🇺 MASTERPVP❤️VPN %233
 
-vless://a9adb34d-f063-4853-ba68-8edeb518a2a2@89.253.221.212:8443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=videolink.okcdn.ru&pbk=FAaFQ2lo8RMnGNU0ilTSvKeH4o-Y2w4eIUkzLcWW7C0&sid=12c6&fp=firefox&type=tcp#proxy-ru-4
+vless://a9adb34d-f063-4853-ba68-8edeb518a2a2@217.16.27.31:8443?security=reality&encryption=none&pbk=FAaFQ2lo8RMnGNU0ilTSvKeH4o-Y2w4eIUkzLcWW7C0&headerType=none&fp=firefox&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=videolink.okcdn.ru&sid=12c6#🇷🇺 MASTERPVP❤️VPN %234
 
-vless://a9adb34d-f063-4853-ba68-8edeb518a2a2@217.16.27.31:8443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=videolink.okcdn.ru&pbk=FAaFQ2lo8RMnGNU0ilTSvKeH4o-Y2w4eIUkzLcWW7C0&sid=12c6&fp=firefox&type=tcp#proxy-ru-5
+vless://a9adb34d-f063-4853-ba68-8edeb518a2a2@217.16.21.103:8443?security=reality&encryption=none&pbk=FAaFQ2lo8RMnGNU0ilTSvKeH4o-Y2w4eIUkzLcWW7C0&headerType=none&fp=firefox&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=videolink.okcdn.ru&sid=12c6#🇷🇺 MASTERPVP❤️VPN %235
 
-vless://a9adb34d-f063-4853-ba68-8edeb518a2a2@217.16.21.103:8443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=videolink.okcdn.ru&pbk=FAaFQ2lo8RMnGNU0ilTSvKeH4o-Y2w4eIUkzLcWW7C0&sid=12c6&fp=firefox&type=tcp#proxy-ru-6
+vless://a9adb34d-f063-4853-ba68-8edeb518a2a2@217.16.27.31:8443?security=reality&encryption=none&pbk=FAaFQ2lo8RMnGNU0ilTSvKeH4o-Y2w4eIUkzLcWW7C0&headerType=none&fp=firefox&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=videolink.okcdn.ru&sid=12c6#🇷🇺 MASTERPVP❤️VPN %236
+
+vless://a9adb34d-f063-4853-ba68-8edeb518a2a2@217.16.21.103:8443?security=reality&encryption=none&pbk=FAaFQ2lo8RMnGNU0ilTSvKeH4o-Y2w4eIUkzLcWW7C0&headerType=none&fp=firefox&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=videolink.okcdn.ru&sid=12c6#🇷🇺 MASTERPVP❤️VPN %237
+
+vless://a9adb34d-f063-4853-ba68-8edeb518a2a2@217.16.27.31:8443?security=reality&encryption=none&pbk=FAaFQ2lo8RMnGNU0ilTSvKeH4o-Y2w4eIUkzLcWW7C0&headerType=none&fp=firefox&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=videolink.okcdn.ru&sid=12c6#🇷🇺 MASTERPVP❤️VPN %238
+
+vless://a9adb34d-f063-4853-ba68-8edeb518a2a2@217.16.21.103:8443?security=reality&encryption=none&pbk=FAaFQ2lo8RMnGNU0ilTSvKeH4o-Y2w4eIUkzLcWW7C0&headerType=none&fp=firefox&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=videolink.okcdn.ru&sid=12c6#🇷🇺 MASTERPVP❤️VPN %239
+
+vless://a9adb34d-f063-4853-ba68-8edeb518a2a2@217.16.27.31:8443?security=reality&encryption=none&pbk=FAaFQ2lo8RMnGNU0ilTSvKeH4o-Y2w4eIUkzLcWW7C0&headerType=none&fp=firefox&allowinsecure=0&type=tcp&flow=xtls-rprx-vision&sni=videolink.okcdn.ru&sid=12c6#🇷🇺 MASTERPVP❤️VPN %2310
+
 
 
 
