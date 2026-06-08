@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -21,14 +23,13 @@ jobs:
 
       - name: Process VPN Files
         run: |
-          python - <<EOF
           import os
           import base64
 
           links_file = "links.txt"
 
+          # Список из 9 файлов (без vpn.txtMASTER)
           target_files = [
-              "vpn.txtMASTER",
               "vpn.txtMASTER1",
               "vpn.txtMASTER2",
               "vpn.txtMASTER3",
@@ -41,28 +42,29 @@ jobs:
           ]
 
           if not os.path.exists(links_file):
-              print(f"Ошибка: Файл {links_file} не найден!")
-              exit(1)
-              
-          with open(links_file, "r", encoding="utf-8") as f:
-              content = f.read().strip()
+              with open(links_file, "w", encoding="utf-8") as f:
+                  f.write("")
+              content = ""
+          else:
+              with open(links_file, "r", encoding="utf-8") as f:
+                  content = f.read().strip()
               
           if not content or content.lower() == "off":
-              print("В links.txt пусто или написано OFF. Ломаем файлы...")
+              print("Режим OFF: Блокируем 9 файлов...")
               off_text = "OFF_vpn".encode("utf-8")
               off_base64 = base64.b64encode(off_text).decode("utf-8")
               
               for file_name in target_files:
-                  with open(file_name, "w", encoding="utf-8") as f:
+                  with open(file_name, "w+", encoding="utf-8") as f:
                       f.write(off_base64)
-                  print(f"Файл {file_name} отключен.")
+                  print(f"Файл {file_name} успешно отключен.")
           else:
-              print("Шифруем новые ссылки из links.txt в Base64...")
+              print("Режим ON: Шифруем ссылки для 9 файлов...")
               encoded_bytes = base64.b64encode(content.encode("utf-8"))
               base64_string = encoded_bytes.decode("utf-8")
               
               for file_name in target_files:
-                  with open(file_name, "w", encoding="utf-8") as f:
+                  with open(file_name, "w+", encoding="utf-8") as f:
                       f.write(base64_string)
                   print(f"Файл {file_name} успешно обновлен и зашифрован.")
           EOF
@@ -72,14 +74,13 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           
-          # Настоящая магия здесь: точка означает добавить ВСЕ измененные файлы в репозитории
-          git add .
+          # Сохраняем все изменения
+          git add -A
           
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Auto-update VPN: All 10 files updated via links.txt"
-            git push
+            git commit -m "Auto-update VPN: 9 files updated (excluding main MASTER)"
+            git push origin main
           fi
-          
           
