@@ -1,8 +1,6 @@
 name: MASTERPVP CONTROL
 on:
-  push:
-    paths:
-      - 'links.txt'
+  workflow_dispatch: # Запуск вручную по кнопке, чтобы другие боты ничего не ломали
 
 permissions:
   contents: write
@@ -29,7 +27,7 @@ jobs:
 
           links_file = "links.txt"
 
-          # Только файлы с цифрами от 1 до 9
+          # Строго файлы с 1 по 9
           target_files = [
               "vpn.txtMASTER1",
               "vpn.txtMASTER2",
@@ -75,12 +73,14 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           
-          git add -A
+          # Явно добавляем файлы с цифрами, чтобы обойти любые другие скрипты
+          git add vpn.txtMASTER1 vpn.txtMASTER2 vpn.txtMASTER3 vpn.txtMASTER4 vpn.txtMASTER5 vpn.txtMASTER6 vpn.txtMASTER7 vpn.txtMASTER8 vpn.txtMASTER9
           
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Auto-update VPN: 9 files updated (excluding main MASTER)"
+            git commit -m "Manual update VPN: 9 files forced update"
             git push origin main
           fi
+          
           
