@@ -84,3 +84,4 @@ vless://33e9f342-d9c0-4343-bdd3-4b1ffe37042d@185.215.184.74:443?encryption=none&
 vless://33e9f342-d9c0-4343-bdd3-4b1ffe37042d@85.192.49.141:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=rutube.ru&fp=qq&pbk=10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc&sid=43dcff53849b81e6&type=tcp#Финляндия low ping
 vless://33e9f342-d9c0-4343-bdd3-4b1ffe37042d@185.215.184.74:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=rutube.ru&fp=firefox&pbk=10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc&sid=43dcff53849b81e6&type=tcp#эстония low ping
 vless://33e9f342-d9c0-4343-bdd3-4b1ffe37042d@185.215.184.74:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=rutube.ru&fp=chrome&pbk=10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc&sid=43dcff53849b81e6&type=tcp#эстония lowping2
+vless://00000000-0000-0000-0000-000000000000@127.0.0.1:0?encryption=none&security=none#👇👇 СЕРВЕРА LTE👇👇
