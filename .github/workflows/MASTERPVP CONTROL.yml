@@ -1,0 +1,101 @@
+name: MASTERPVP CONTROL
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: 'Выберите действие'
+        required: true
+        default: 'off'
+        type: choice
+        options:
+        - 'off'
+        - 'on'
+
+permissions:
+  contents: write
+
+jobs:
+  switch_vpn:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Process VPN Files
+        run: |
+          python - <<EOF
+          import os
+          import base64
+
+          action = "${{ github.event.inputs.action }}"
+          links_file = "links.txt"
+
+          # Список всех 10 файлов, куда нужно разложить результат
+          target_files = [
+              "vpn.txtMASTER",
+              "vpn.txtMASTER1",
+              "vpn.txtMASTER2",
+              "vpn.txtMASTER3",
+              "vpn.txtMASTER4",
+              "vpn.txtMASTER5",
+              "vpn.txtMASTER6",
+              "vpn.txtMASTER7",
+              "vpn.txtMASTER8",
+              "vpn.txtMASTER9"
+          ]
+
+          if action == "off":
+              print("Режим OFF: Ломаем файлы...")
+              # При выключении забиваем все 10 файлов пустышкой или OFF в base64
+              off_text = "OFF_vpn".encode("utf-8")
+              off_base64 = base64.b64encode(off_text).decode("utf-8")
+              
+              for file_name in target_files:
+                  with open(file_name, "w", encoding="utf-8") as f:
+                      f.write(off_base64)
+                  print(f"Файл {file_name} отключен.")
+                  
+          else:
+              print("Режим ON: Шифруем ссылки из links.txt...")
+              if not os.path.exists(links_file):
+                  print(f"Ошибка: Файл {links_file} не найден!")
+                  exit(1)
+                  
+              # Читаем чистые ссылки из links.txt
+              with open(links_file, "r", encoding="utf-8") as f:
+                  content = f.read().strip()
+                  
+              if not content:
+                  print("Предупреждение: links.txt пустой!")
+                  content = "vless://empty_links_file"
+
+              # Кодируем содержимое links.txt в Base64 в одну строку
+              encoded_bytes = base64.b64encode(content.encode("utf-8"))
+              base64_string = encoded_bytes.decode("utf-8")
+              
+              # Записываем эту Base64 строку во все 10 файлов
+              for file_name in target_files:
+                  with open(file_name, "w", encoding="utf-8") as f:
+                      f.write(base64_string)
+                  print(f"Файл {file_name} успешно обновлен и зашифрован.")
+          EOF
+
+      - name: Save changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          # Добавляем все измененные файлы MASTER
+          git add vpn.txtMASTER*
+          
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "VPN Control: ${{ github.event.inputs.action }} (Base64 split to 10 files)"
+            git push
+          fi
