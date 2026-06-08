@@ -1,4 +1,4 @@
-Name: VPN MASTER panel
+name: VPN MASTER panel
 on:
   workflow_dispatch:
     inputs:
