@@ -1,4 +1,4 @@
-name: VPN MASTER panel
+Name: VPN MASTER panel
 on:
   workflow_dispatch:
     inputs:
@@ -21,21 +21,41 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Update VPN File
+      - name: Update VPN Files
         run: |
+          # Список файлов, которые нужно обрабатывать (через пробел)
+          FILES="vpn.txtMASTER links.txt"
+          
           if [ "${{ github.event.inputs.action }}" == "off" ]; then
-            # Заменяем vless на OFF_vless в файле vpn.txtMASTER
-            sed -i 's/vless/OFF_vless/g' vpn.txtMASTER
+            echo "Выключаем VPN в файлах..."
+            for file in $FILES; do
+              if [ -f "$file" ]; then
+                sed -i 's/vless/OFF_vless/g' "$file"
+                echo "Файл $file успешно отключен"
+              else
+                echo "Предупреждение: файл $file не найден"
+              fi
+            done
           else
-            # Возвращаем обратно
-            sed -i 's/OFF_vless/vless/g' vpn.txtMASTER
+            echo "Включаем VPN в файлах..."
+            for file in $FILES; do
+              if [ -f "$file" ]; then
+                sed -i 's/OFF_vless/vless/g' "$file"
+                echo "Файл $file успешно включен"
+              else
+                echo "Предупреждение: файл $file не найден"
+              fi
+            done
           fi
           
       - name: Save changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add vpn.txtMASTER
+          
+          # Добавляем оба файла (или вообще все txt файлы, если их станет больше)
+          git add vpn.txtMASTER links.txt
+          
           # Проверяем, есть ли изменения, прежде чем пушить
           if git diff --staged --quiet; then
             echo "No changes to commit"
