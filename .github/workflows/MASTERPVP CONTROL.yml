@@ -1,15 +1,8 @@
 name: MASTERPVP CONTROL
 on:
-  workflow_dispatch:
-    inputs:
-      action:
-        description: 'Выберите действие'
-        required: true
-        default: 'off'
-        type: choice
-        options:
-        - 'off'
-        - 'on'
+  push:
+    paths:
+      - 'links.txt' # Бот запустится автоматически ТОЛЬКО при изменении этого файла
 
 permissions:
   contents: write
@@ -32,10 +25,9 @@ jobs:
           import os
           import base64
 
-          action = "${{ github.event.inputs.action }}"
           links_file = "links.txt"
 
-          # Список всех 10 файлов, куда нужно разложить результат
+          # Список всех 10 файлов, куда раскладываем результат
           target_files = [
               "vpn.txtMASTER",
               "vpn.txtMASTER1",
@@ -49,9 +41,17 @@ jobs:
               "vpn.txtMASTER9"
           ]
 
-          if action == "off":
-              print("Режим OFF: Ломаем файлы...")
-              # При выключении забиваем все 10 файлов пустышкой или OFF в base64
+          if not os.path.exists(links_file):
+              print(f"Ошибка: Файл {links_file} не найден!")
+              exit(1)
+              
+          # Читаем чистые ссылки из links.txt
+          with open(links_file, "r", encoding="utf-8") as f:
+              content = f.read().strip()
+              
+          # Если ты стёр всё из links.txt или написал туда OFF, то ломаем файлы
+          if not content or content.lower() == "off":
+              print("В links.txt пусто или написано OFF. Ломаем файлы...")
               off_text = "OFF_vpn".encode("utf-8")
               off_base64 = base64.b64encode(off_text).decode("utf-8")
               
@@ -59,21 +59,8 @@ jobs:
                   with open(file_name, "w", encoding="utf-8") as f:
                       f.write(off_base64)
                   print(f"Файл {file_name} отключен.")
-                  
           else:
-              print("Режим ON: Шифруем ссылки из links.txt...")
-              if not os.path.exists(links_file):
-                  print(f"Ошибка: Файл {links_file} не найден!")
-                  exit(1)
-                  
-              # Читаем чистые ссылки из links.txt
-              with open(links_file, "r", encoding="utf-8") as f:
-                  content = f.read().strip()
-                  
-              if not content:
-                  print("Предупреждение: links.txt пустой!")
-                  content = "vless://empty_links_file"
-
+              print("Шифруем новые ссылки из links.txt в Base64...")
               # Кодируем содержимое links.txt в Base64 в одну строку
               encoded_bytes = base64.b64encode(content.encode("utf-8"))
               base64_string = encoded_bytes.decode("utf-8")
@@ -96,6 +83,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "VPN Control: ${{ github.event.inputs.action }} (Base64 split to 10 files)"
+            git commit -m "Auto-update VPN: links.txt modified"
             git push
           fi
+          
