@@ -1,0 +1,46 @@
+name: Auto Copy Link to VPN Files
+
+on:
+  push:
+    paths:
+      - 'links.txt' # Скрипт запустится, как только изменится файл links.txt
+
+permissions:
+  contents: write
+
+jobs:
+  copy-links:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository code
+        uses: actions/checkout@v4
+
+      - name: Copy links.txt content to vpn MASTER files
+        run: |
+          # Проверяем, существует ли исходный файл links.txt
+          if [ -f "links.txt" ]; then
+            # Цикл от 1 до 9 для файлов с точным именем vpn.txtMASTER1 ... vpn.txtMASTER9
+            for i in {1..9}; do
+              cp links.txt "vpn.txtMASTER$i"
+              echo "Файл vpn.txtMASTER$i успешно обновлен"
+            done
+          else
+            echo "Ошибка: Исходный файл links.txt не найден!"
+            exit 1
+          fi
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Добавляем в индекс обновленные файлы (с учетом заглавных букв MASTER)
+          git add vpn.txtMASTER*
+          
+          # Проверяем, появились ли изменения, чтобы избежать пустых коммитов
+          if git diff --staged --quiet; then
+            echo "Изменений нет, пропускаем коммит."
+          else
+            git commit -m "Автоматическое обновление VPN файлов из links.txt"
+            git push
+          fi
