@@ -1,0 +1,39 @@
+name: Clone Base64 to Masters 1-9
+
+on:
+  push:
+    paths:
+      - 'vpn.txtMASTER' # Робот сработает только тогда, когда вы измените этот файл
+
+permissions:
+  contents: write
+
+jobs:
+  copy-content:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Copy content to files 1-9
+      run: |
+        # Проверяем, существует ли главный файл
+        if [ ! -f "vpn.txtMASTER" ]; then
+          echo "Ошибка: Файл vpn.txtMASTER не найден!"
+          exit 1
+        fi
+
+        # Цикл от 1 до 9 автоматически скопирует текст во все нужные файлы
+        for i in {1..9}; do
+          echo "Копирую содержимое в vpn.txtMASTER$i"
+          cp "vpn.txtMASTER" "vpn.txtMASTER$i"
+        done
+
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add .
+        git commit -m "Автоматическое клонирование из vpn.txtMASTER в vpn.txtMASTER1-9" || exit 0
+        git push
+        
