@@ -1,8 +1,8 @@
 #profile-title:💖KYKOLD_VPN💖
 #profile-update-interval: 1
 #profile-description: LTE-обход белых списков%0AНе забывайте обновлять подписку чтобы сервера не лагали
-#subscription-userinfo: upload=0; download=0; total=10737418240; expire=151403068800
-vless://00000000-0000-0000-0000-000000000000@127.0.0.1:0?encryption=none&security=none#👇👇LTE сервера👇👇
+#subscription-userinfo: upload=0; download=0; total=0; expire=151403068800
+
 vless://49710dc1-c4a4-42a4-9c06-2b746b2f1ccc@94.228.168.18:10444?encryption=none&security=none&type=ws&host=vpnpolar.online&path=%2Fbeeline#ФИНЛЯНДИЯ 0 ПИНГ 
 vless://49710dc1-c4a4-42a4-9c06-2b746b2f1ccc@45.94.37.7:10444?encryption=none&security=none&type=ws&host=vpnpolar.online&path=%2Fbeeline#НИДЕРЛАНДЫ 0 ПИНГ 
 vless://49710dc1-c4a4-42a4-9c06-2b746b2f1ccc@45.86.245.225:10444?encryption=none&security=none&type=ws&host=vpnpolar.online&path=%2Fbeeline#СЕРВЕР 0 ПИНГ
@@ -99,7 +99,7 @@ vless://9a54a862-2607-4750-8df4-c89fc3b2c5ff@nl2.fastload.run:443?encryption=non
 
 
 ...
-,,.
+
 
 
 
